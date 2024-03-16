@@ -1,0 +1,52 @@
+/* Desque scheme */
+:root {
+  --color-neutral: 250, 250, 250;
+  /* Gray */
+  --color-neutral-50: 244, 245, 245;
+  --color-neutral-100: 204, 207, 208;
+  --color-neutral-200: 164, 169, 171;
+  --color-neutral-300: 124, 131, 134;
+  --color-neutral-400: 84, 93, 97;
+  --color-neutral-500: 45, 56, 60;
+  --color-neutral-600: 36, 44, 48;
+  --color-neutral-700: 27, 33, 36;
+  --color-neutral-800: 17, 25, 40;
+  --color-neutral-900: 8, 11, 11;
+  /* Yellow */
+  --color-primary-50: 252,250,248;
+  --color-primary-100: 241,231,221;
+  --color-primary-200: 230,213,194;
+  --color-primary-300: 219,195,168;
+  --color-primary-400: 208,177,141;
+  --color-primary-500: 198,159,115;
+  --color-primary-600: 158,127,92;
+  --color-primary-700: 118,95,69;
+  --color-primary-800: 79,63,46;
+  --color-primary-900: 39,31,22;
+  /* Blue */
+  --color-secondary-50: 243,244,247;
+  --color-secondary-100: 201,204,217;
+  --color-secondary-200: 158,163,187;
+  --color-secondary-300: 116,123,157;
+  --color-secondary-400: 73,83,127;
+  --color-secondary-500: 31,43,98;
+  --color-secondary-600: 24,34,78;
+  --color-secondary-700: 18,25,58;
+  --color-secondary-800: 12,17,39;
+  --color-secondary-900: 6,8,19;
+  /* Background */
+  --color-background: 45, 56, 60;
+  --color-background-50: 234, 235, 235;
+  --color-background-100: 199, 236, 240;
+  --color-background-200: 154, 221, 229;
+  --color-background-300: 110, 207, 217;
+  --color-background-400: 66, 192, 206;
+  --color-background-500: 22, 178, 195;
+  --color-background-600: 17, 142, 156;
+  --color-background-700: 13, 106, 117;
+  --color-background-800: 8, 71, 78;
+  --color-background-900: 4, 35, 38;
+  /* Text */
+  --color-text: 250, 250, 250;
+  --color-text-900: 24, 24, 24;
+}

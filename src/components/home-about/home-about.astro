@@ -1,0 +1,34 @@
+---
+import ImageC from '../utils/ImageC.astro';
+
+interface Props {
+	h2: string;
+	p: string;
+	imagePath: string;
+  altText: string;
+}
+
+const block = Astro.props;
+---
+
+<section class="">
+	<div
+		class="mx-auto max-w-screen-xl items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16"
+	>
+		<div>
+			<h2 class="mb-4 text-4xl font-extrabold tracking-tight">
+				{block.h2}
+			</h2>
+			<p class="mb-6">
+				{block.p}
+			</p>
+		</div>
+		<ImageC
+			overlay={true}
+			overlayColor="bg-neutral-800/70"
+			image={block.imagePath}
+			alt={block.altText}
+			class="mx-auto hidden w-64 aspect-[2/3] md:flex "
+		/>
+	</div>
+</section>

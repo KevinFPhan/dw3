@@ -1,0 +1,46 @@
+---
+import ImageC from '../utils/ImageC.astro';
+
+interface Props {
+	h2: string;
+	p: string;
+	images: {
+		imagePath: string;
+		altText: string;
+	}[];
+}
+
+const block = Astro.props;
+---
+
+<section class="">
+	<div
+		class="mx-auto max-w-screen-xl px-4 py-8 sm:text-center lg:px-12 lg:py-16"
+	>
+		<h2 class="mb-4">{block.h2}</h2>
+		<p class="lg:px-38 md:px-20 xl:px-48">
+			{block.p}
+		</p>
+		<div class="mt-8 gap-4 sm:mt-12 sm:grid sm:grid-cols-4">
+			{
+				block.images.map((image, i) => {
+					let classes = '';
+					if (i === 0) {
+						classes =
+							'col-span-2 h-full w-full mb-4 rounded-lg sm:mb-0 object-center object-cover';
+					} else if (i === block.images.length - 1) {
+						classes =
+							'col-span-2 h-full w-full rounded-lg object-center object-cover ';
+					} else {
+						classes =
+							'col-span-1 h-full w-full object-cover object-center hidden rounded-lg sm:block';
+					}
+
+					return (
+						<img class={`${classes} max-h-[250px]`} src={image.imagePath} alt={image.altText} />
+					);
+				})
+			}
+		</div>
+	</div>
+</section>
